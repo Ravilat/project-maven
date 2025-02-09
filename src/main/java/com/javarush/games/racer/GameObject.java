@@ -22,6 +22,9 @@ public class GameObject {
         width = matrix[0].length;
         height = matrix.length;
     }
+//    public Color getColor (){
+//        return Color.values()[0];
+//    }
 
     public void draw(Game game) {
         for (int i = 0; i < width; i++) {
@@ -31,7 +34,6 @@ public class GameObject {
             }
         }
     }
-
     public boolean isCollisionPossible(GameObject otherGameObject) {
         if (x > otherGameObject.x + otherGameObject.width || x + width < otherGameObject.x) {
             return false;

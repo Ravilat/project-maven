@@ -43,6 +43,7 @@ public class JarRsrcLoader {
     }
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalArgumentException, IllegalAccessException, InvocationTargetException, SecurityException, NoSuchMethodException, IOException {
+//        System.out.println(System.getProperty("java.home"));
         ManifestInfo mi = getManifestInfo();
         ClassLoader cl = Thread.currentThread().getContextClassLoader();
         URL.setURLStreamHandlerFactory(new RsrcURLStreamHandlerFactory(cl));
